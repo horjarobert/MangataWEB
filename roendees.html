@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ro en de es</title>
+  <meta charset="utf-8" content="HTML, CSS, JavaScript"/>
+
+  <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
+
+  <link href="sticker.min.js" type="application/JavaScript"/>
+  <style>
+
+  @import "roendees.css";
+
+  </style>
+
+
+  <script>
+
+    function setLang(lang){
+      document.getElementsByTagName('html')[0].setAttribute("lang", lang);
+    }
+
+  </script>
+
+  <script>
+
+    function roExpl(){
+      alert("Salut! Acest tip de poezie ..." );
+    }
+
+  </script>
+
+<!-- ? Hover on then click on roQuestionSchimbaBackground: -->
+  <script>
+
+    function blueSch(){
+      document.getElementById('changeAllBodyBgColor').style.backgroundColor='#0D3282';
+
+      document.getElementById('textContent').style.borderColor='lightblue';
+      document.getElementById('textContent').style.boxShadow='30px 20px #062057';
+
+      document.getElementById('footer').style.backgroundColor='#2852AC';
+    }
+
+    function orangeSch(){
+      document.getElementById('changeAllBodyBgColor').style.backgroundColor='#924D00';
+
+      document.getElementById('textContent').style.borderColor='orange';
+      document.getElementById('textContent').style.boxShadow='30px 20px #FF8700';
+
+      document.getElementById('footer').style.backgroundColor='#D67100';
+    }
+
+    function comeBack(){
+      document.getElementById('changeAllBodyBgColor').style.backgroundColor='#1A6D1A';
+
+      document.getElementById('textContent').style.borderColor='#63BE63';
+      document.getElementById('textContent').style.boxShadow='30px 20px #0C520C';
+
+      document.getElementById('footer').style.backgroundColor='#63BE63';
+    }
+  </script>
+<!-- End ? Hover on then click on roQuestionSchimbaBackground: -->
+
+  <!-- sticker -->
+  <script type="text/javascript">
+       window.onload = function() {
+           Sticker.init('.sticker');
+       }
+   </script>
+   <!-- End sticker -->
+
+</head>
+<body id='changeAllBodyBgColor'>
+
+  <h1><span class="roColor">ro</span><span class="enColor">en</span><span class="deColor">de</span><span class="esColor">es</span></h1><br/><br/>
+
+  <!-- ? hover -->
+
+  <div class="question" onclick="comeBack()" title="hover || click">
+  </div>
+  <div id="questionSchimbaBlue" onclick="blueSch()" title="Click me!"></div>
+  <div id="questionSchimbaOrange" onclick="orangeSch()" title="Click me!"></div>
+  <!-- End ? hover -->
+
+  <!-- Something new -->
+
+  <div class="sticker exe-1 exe-2"></div>
+
+  <!-- End something new -->
+  <div id="textContent">
+    <span class="ro">
+<pre>
+
+<span class="roTitle">RO::poezie</span>
+                  de <span class="roMe">Horja Robert Emanuel</span>
+
+Dulce poezie,
+Codul îți adie
+Versuri la cutie,
+Toate pe felie
+Sunt ca o lipie ...
+Hash tag: #poezie!
+</pre>
+    </span>
+    <span class="en">
+<pre>
+
+<span class="enTitle">EN::poetry</span>
+                  by <span class="enMe">Horja Robert Emanuel</span>
+
+My fresh poetry,
+Code is ministry,
+Lyrics registry,
+All for geometry
+Are good symmetry ...
+Hash tag: #poetry!
+
+</pre>
+    </span>
+    <span class="de">
+<pre>
+
+<span class="deTitle">DE::Poesie</span>
+                von <span class="deMe">Horja Robert Emanuel</span>
+
+Meine liebe Poesie,
+Bist du meine Phantasie?
+Zum Lokalanästhesie
+Mit ein bisschen courtoisie
+Und null Macht in häeresie ...
+Hash tag, meine: #Poesie!
+</pre>
+    </span>
+
+    <span class="es">
+      <pre>
+
+<span class="esTitle">ES::poesía</span>
+                por <span class="esMe">Horja Robert Emanuel</span>
+
+¡Eh! Querida poesía,
+Eres una fantasía,
+Letra de la burguesía
+Para me, la progresía,
+Un milagro de Mesía ...
+Hash tag, todas: #poesía!
+</pre>
+    </span>
+
+  </div>
+
+  <div class="romania">
+    <button onclick="setLang('ro');"></button>
+  </div>
+
+  <div class="england">
+    <button onclick="setLang('en')"></button>
+  </div>
+
+  <div class="germany">
+    <button onclick="setLang('de')"></button>
+  </div>
+
+  <div class="spain">
+    <button onclick="setLang('es')"></button>
+  </div>
+
+  <footer id="footer">
+    <p>&copy; All rights reserved by <span><a class="horjaEu" href="http://www.horja.eu">horja.eu</a></span>&trade; - 2018 </p>
+  </footer>
+
+</body>
+</html>

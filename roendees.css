@@ -1,0 +1,455 @@
+*{
+  transition: 1s;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #1A6D1A;
+}
+
+/* textContent - here will be the MAIN text - poems */
+#textContent{
+  width: 50%;
+  height: 50%;
+  border: 10px solid #63BE63;
+  border-radius: 50%;
+  box-shadow: 30px 20px #0C520C;
+  background-color: white;
+  position: absolute;
+  left: 25%;
+  text-align: center;
+  font-size: 1.7vw;
+  margin: auto;
+  color: #0C520C;
+
+
+}
+
+#textContent:hover{
+  background-color: #54626F;
+  color: white;
+  cursor: wait;
+
+}
+.ro, .en, .de, .es{
+  display: none;
+
+}
+
+.ro:lang(ro), .en:lang(en), .de:lang(de), .es:lang(es){
+  display: block;
+
+}
+/* button stilization */
+.romania button {
+  background: url('romania.png') no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border: none;
+
+
+  position: absolute;
+  left: 35%;
+  top: 70%;
+
+  cursor: progress;
+  opacity: 0.6;
+}
+
+.romania button:hover{
+  opacity: 1;
+  background: url('romania-ro.png') no-repeat;
+  background-size: cover;
+
+}
+.england button{
+  background: url('england.png') no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border: none;
+
+
+  position: absolute;
+  left: 42%;
+  top: 70%;
+
+  cursor: progress;
+  opacity: 0.6;
+}
+
+.england button:hover{
+  opacity: 1;
+  background: url('england-en.png') no-repeat;
+  background-size: cover;
+}
+
+.germany button{
+  background: url('germany.png') no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border: none;
+
+
+  position: absolute;
+  left: 49%;
+  top: 70%;
+
+  cursor: progress;
+  opacity: 0.6;
+}
+.germany button:hover{
+  opacity: 1;
+  background: url('germany-de.png') no-repeat;
+  background-size: cover;
+}
+.spain button{
+  background: url('spain.png') no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border: none;
+
+
+  position: absolute;
+  left: 56%;
+  top: 70%;
+
+  cursor: progress;
+  opacity: 0.6;
+}
+
+.spain button:hover{
+  opacity: 1;
+  background: url('spain-es.png') no-repeat;
+  background-size: cover;
+
+}
+
+/* footer details */
+
+.horjaEu{
+  text-decoration: none;
+  color: inherit;
+}
+footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  background-color: #63BE63;
+  color: white;
+  text-align: center;
+  font-size: 100%;
+}
+footer:hover{
+  background-color: white;
+  color: blue;
+  cursor: help;
+}
+
+/* span Title */
+
+.roTitle{
+  animation: rotitle 2s;
+
+}
+@keyframes rotitle{
+  0%{
+    font-size: 0.9vw;
+    color: blue;
+    font-weight: bold;
+  }
+  50%{
+    font-size: 2vw;
+    color: yellow;
+    font-weight: bold;
+
+  }
+  100%{
+    font-size: 1.7vw;
+    color: red;
+    font-weight: bold;
+
+  }
+}
+
+.enTitle{
+  animation: entitle 2s;
+
+}
+@keyframes entitle{
+  0%{
+    font-size: 0.9vw;
+    color: red;
+    font-weight: bold;
+  }
+  50%{
+    font-size: 2vw;
+    color: white;
+    font-weight: bold;
+
+  }
+  100%{
+    font-size: 1.7vw;
+    color: red;
+    font-weight: bold;
+
+  }
+}
+.deTitle{
+  animation: detitle 2s;
+}
+@keyframes detitle{
+  0%{
+    font-size: 0.9vw;
+    color: black;
+    font-weight: bold;
+  }
+  50%{
+    font-size: 2vw;
+    color: red;
+    font-weight: bold;
+
+  }
+  100%{
+    font-size: 1.7vw;
+    color: yellow;
+    font-weight: bold;
+
+  }
+}
+
+.esTitle{
+  animation: estitle 2s;
+}
+
+@keyframes estitle{
+  0%{
+    font-size: 0.9vw;
+    color: red;
+    font-weight: bold;
+  }
+  50%{
+    font-size: 2vw;
+    color: yellow;
+    font-weight: bold;
+
+  }
+  100%{
+    font-size: 1.7vw;
+    color: red;
+    font-weight: bold;
+
+  }
+}
+
+.roMe{
+  animation: rome 2s;
+}
+@keyframes rome{
+  0%{
+    color: blue;
+  }
+  50%{
+    color: yellow;
+  }
+  100%{
+    color: red;
+  }
+}
+
+.enMe{
+  animation: enme 2s;
+}
+@keyframes enme{
+  0%{
+    color: red;
+  }
+  50%{
+    color: white;
+  }
+  100%{
+    color: red;
+  }
+}
+.deMe{
+  animation: deme 2s;
+}
+@keyframes deme{
+  0%{
+    color: black;
+  }
+  50%{
+    color: red;
+  }
+  100%{
+    color: yellow;
+  }
+}
+.esMe{
+  animation: esme 2s;
+}
+@keyframes esme{
+  0%{
+    color: red;
+  }
+  50%{
+    color: yellow;
+  }
+  100%{
+    color: red;
+  }
+}
+
+/* create font */
+
+@font-face{
+  font-family: 'Hashtag';
+  src: url(Mothproof_Script.ttf);
+}
+h1{
+  text-align: center;
+  font-family: 'Hashtag';
+  font-size: 2.7vw;
+  padding: 0;
+  margin: 0;
+}
+
+/* title animation h1 */
+
+.roColor{
+  animation: rocolor 6s infinite alternate backwards;
+}
+@keyframes rocolor{
+  0%{
+    color: blue;
+  }
+  50%{
+    color: yellow;
+  }
+  100%{
+    color: red;
+  }
+}
+
+.enColor{
+  animation: encolor 6s infinite alternate backwards;
+}
+@keyframes encolor{
+  0%{
+    color: white;
+  }
+  50%{
+    color: red;
+  }
+  100%{
+    color: white;
+  }
+}
+
+.deColor{
+  animation: decolor 6s infinite alternate backwards;
+}
+@keyframes decolor{
+  0%{
+    color: black;
+  }
+  50%{
+    color: red;
+  }
+  100%{
+    color: yellow;
+  }
+}
+
+.esColor{
+  animation: escolor 6s infinite alternate backwards;
+}
+@keyframes escolor{
+  0%{
+    color: red;
+  }
+  50%{
+    color: yellow;
+  }
+  100%{
+    color: red;
+  }
+}
+
+/* ? hover */
+.question{
+  width: 10%;
+  padding-top:10%;
+  position: absolute;
+  right: 5%;
+  background: url('rsz_question.png') no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  cursor: grab;
+}
+
+#questionSchimbaBlue{
+  opacity:0;
+  width: 8%;
+  padding-top: 8%;
+  position: absolute;
+  right: 6%;
+  top: 35%;
+  background-color: blue;
+  border-radius: 50%;
+  transition: 10s;
+  cursor: help;
+}
+
+.question:hover + #questionSchimbaBlue{
+  opacity: 1;
+  transition: 1s;
+}
+
+#questionSchimbaOrange{
+  opacity:0;
+  width: 8%;
+  padding-top: 8%;
+  position: absolute;
+  right: 6%;
+  top: 55%;
+  background-color: orange;
+  border-radius: 50%;
+  transition: 10s;
+  cursor: help;
+}
+
+.question:hover ~ #questionSchimbaOrange{
+  opacity: 1;
+  transition: 1s;
+}
+
+.question:hover{
+  opacity: 1;
+  transition: 1s;
+}
+
+/* sticker */
+.sticker {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    margin: 50px;
+}
+
+.exe-1 .sticker-img {
+    background: url('romania.png');
+}
+
+.exe-2 .sticker-img {
+    background-color: #ff4a85;
+}
+
+.exe-2 .sticker-shadow {
+   opacity: 0.6;
+}
